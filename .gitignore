@@ -1,0 +1,87 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+
+# Environments file
+.env
+!fastlane/.env
+build
+.vscode/.react/crna-entry.bundle
+.vscode/.react/crna-entry.map
+.vscode/.react/debuggerWorker.js
+test-report.html
+reports
+junit.xml
+
+# Jest Cache
+.jest
+
+# This file is now generated and shouldn't be committed
+app.json
+
+.tmp
+*.tmp
+
+# XCode / CocoaPods
+Pods
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+Podfile.checksum
+ios/step/Info.plist.checksum
+ios/step.xcodeproj/project.pbxproj.checksum
+Frameworks-build
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+android/local.properties
+*.iml
+
+#Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Android
+android/app/src/dev/gen
+android/build
+android/.gradle
+android/local.properties
+*.iml
+.java-version
+android/dependencies.out
+
+# Fastlane
+Step.app.dSYM.zip
+fastlane/report.xml
+output
+vendor
+.bundle
