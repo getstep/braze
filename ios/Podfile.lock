@@ -1,4 +1,22 @@
 PODS:
+  - Analytics (3.7.1)
+  - Appboy-iOS-SDK (3.21.3):
+    - Appboy-iOS-SDK/UI (= 3.21.3)
+  - Appboy-iOS-SDK/ContentCards (3.21.3):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (~> 5.0)
+  - Appboy-iOS-SDK/Core (3.21.3)
+  - Appboy-iOS-SDK/InAppMessage (3.21.3):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (~> 5.0)
+  - Appboy-iOS-SDK/NewsFeed (3.21.3):
+    - Appboy-iOS-SDK/Core
+    - SDWebImage (~> 5.0)
+  - Appboy-iOS-SDK/UI (3.21.3):
+    - Appboy-iOS-SDK/ContentCards
+    - Appboy-iOS-SDK/Core
+    - Appboy-iOS-SDK/InAppMessage
+    - Appboy-iOS-SDK/NewsFeed
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
@@ -292,6 +310,23 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
+  - RNAnalytics (1.1.1-beta.2):
+    - Analytics
+    - React
+  - RNAnalyticsIntegration-Appboy (1.1.1-beta.2):
+    - Analytics
+    - React
+    - RNAnalytics
+    - Segment-Appboy
+  - SDWebImage (5.7.1):
+    - SDWebImage/Core (= 5.7.1)
+  - SDWebImage/Core (5.7.1)
+  - Segment-Appboy (3.0.0):
+    - Analytics (~> 3.0)
+    - Segment-Appboy/Full-SDK (= 3.0.0)
+  - Segment-Appboy/Full-SDK (3.0.0):
+    - Analytics (~> 3.0)
+    - Appboy-iOS-SDK (~> 3.21.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -343,10 +378,14 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/callinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNAnalytics (from `../node_modules/@segment/analytics-react-native`)"
+  - "RNAnalyticsIntegration-Appboy (from `../node_modules/@segment/analytics-react-native-appboy`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - Analytics
+    - Appboy-iOS-SDK
     - boost-for-react-native
     - CocoaAsyncSocket
     - CocoaLibEvent
@@ -358,6 +397,8 @@ SPEC REPOS:
     - Flipper-RSocket
     - FlipperKit
     - OpenSSL-Universal
+    - SDWebImage
+    - Segment-Appboy
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -409,10 +450,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNAnalytics:
+    :path: "../node_modules/@segment/analytics-react-native"
+  RNAnalyticsIntegration-Appboy:
+    :path: "../node_modules/@segment/analytics-react-native-appboy"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Analytics: f82f3cd6d3c8fbfd76ce25773199576656981a4a
+  Appboy-iOS-SDK: 2600f129c311e14217a2b0e75264bad88214b97c
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
@@ -448,6 +495,10 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
+  RNAnalytics: bf9743995acee035396822c40bcdd1b87e90ba76
+  RNAnalyticsIntegration-Appboy: d7dd3aa38bcb930b791f3e9cef6cc8e3476396d4
+  SDWebImage: 5d4cf6afccd9ac1d2ee701ed0c4917cbb1b80536
+  Segment-Appboy: 150f6fc0aacaa2dcded5073e4207066862a097a0
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

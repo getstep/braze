@@ -1088,6 +1088,16 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.1.0.tgz#e42b1bef12d2415411519fd528e64b593b1363dc"
   integrity sha512-W/J0fNYVO01tioHjvYWQ9m6RgndVtbElzYozBq1ZPrHO/iCzlqoySHl4gO/fpCl9QEFjvJfjPgtPMTMlsoq5DQ==
 
+"@segment/analytics-react-native-appboy@^1.1.1-beta.2":
+  version "1.1.1-beta.2"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native-appboy/-/analytics-react-native-appboy-1.1.1-beta.2.tgz#a935d049a08f659cb58daa0505c396b527751939"
+  integrity sha512-/dvsI6S7MsN6c0FVJIaXAlNBv2meC8BKvHTSJgMk2vszrGzkNiZg8PjHP2AOVVaaUJD7NyZfX3llCrs4yxfH+A==
+
+"@segment/analytics-react-native@^1.1.1-beta.2":
+  version "1.1.1-beta.2"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native/-/analytics-react-native-1.1.1-beta.2.tgz#c88b3732bda559dd400de66d55ff4bd6bae58ab3"
+  integrity sha512-4M6mZGL/otACdCnTDjz28ZRiigOWCA3vk9ut0Z9idzMPRVLNoENuNh6rd4BiaditoWb3ktuqwdi8CW612h3DJA==
+
 "@sinonjs/commons@^1.7.0":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.7.2.tgz#505f55c74e0272b43f6c52d81946bed7058fc0e2"
