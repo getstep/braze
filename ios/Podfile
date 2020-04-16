@@ -46,6 +46,8 @@ def flipper_post_install(installer)
 end
 
 target 'Braze' do
+  use_frameworks!
+
   # Pods for Braze
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
