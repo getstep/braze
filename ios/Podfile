@@ -1,5 +1,6 @@
-platform :ios, '9.0'
+platform :ios, '10.3'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
 
 def add_flipper_pods!(versions = {})
   versions['Flipper'] ||= '~> 0.33.1'
@@ -83,15 +84,16 @@ target 'Braze' do
   end
 
   use_native_modules!
+  use_unimodules!
 
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  add_flipper_pods!
-  post_install do |installer|
-    flipper_post_install(installer)
-  end
+  #  add_flipper_pods!
+  #  post_install do |installer|
+  #    flipper_post_install(installer)
+  #  end
 end
 
 target 'Braze-tvOS' do
